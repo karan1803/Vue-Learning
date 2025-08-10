@@ -1,3 +1,18 @@
+<script setup>
+ import { defineProps } from 'vue';
+
+ defineProps({
+    title: {
+        type: String,
+        default: 'Become a Job Seeker'
+    },
+    description: {
+        type: String,
+        default: 'Find the Job that fits your skills and needs'
+    }
+ })
+</script>
+
 <template>
     <section class="bg-green-700 py-20 mb-4">
       <div
@@ -7,10 +22,10 @@
           <h1
             class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
           >
-            Become a Job Seeker
+            {{ title }}
           </h1>
           <p class="my-4 text-xl text-white">
-            Find the Job that fits your skills and needs
+            {{ description }}
           </p>
         </div>
       </div>

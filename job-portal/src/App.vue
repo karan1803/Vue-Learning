@@ -1,11 +1,11 @@
 <script setup>
   import Navbar from './components/Navbar.vue'
-  import Hero from './components/hero.vue'
+  import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <Navbar />
-  <Hero />
+  <RouterView />
 </template>
 
 <style scoped></style>

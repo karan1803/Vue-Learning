@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "primeicons/primeicons.css";
+@import 'vue3-toastify/dist/index.css';
 
 @theme {
   --font-sans: 'Poppins', sans-serif;
